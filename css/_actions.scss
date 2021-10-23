@@ -8,11 +8,13 @@
         margin-right: 1rem;
         .fas{
             font-size: 2.5rem;
+            color: $lightGray;
         }
     }
     cite{
-        font-size: 2.5rem;
-        
+        font-size: 2rem;
+        font-weight: 600;
+        color: $lightGray;
     }
     //button
     .btn{
@@ -22,7 +24,7 @@
     // .actions .socail-icons .fab
     .socail-icons  .fab{
         color: $lightGray;
-        font-size: 3rem;
+        font-size: 2.3rem;
         cursor: pointer;
 
         &:hover{
@@ -31,5 +33,11 @@
         &:not(:first-child){
             margin-right: 1rem;
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .actions{
+        display: none;
     }
 }
