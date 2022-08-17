@@ -10,6 +10,7 @@
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -260,6 +261,9 @@ span.description {
 }
 
 @media screen and (max-width: 768px) {
+  .hero__content {
+    height: 80vh;
+  }
   .hero__content h1 {
     font-size: 25px;
   }
