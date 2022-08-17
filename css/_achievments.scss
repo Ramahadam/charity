@@ -1,0 +1,64 @@
+.achievments{
+    padding: 90px 0;
+    text-align: center;
+
+    &__contents{
+       p{
+       margin: 2rem  0 4.5rem 0;
+       }
+        .wrappers{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            article{
+               span{
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    .number{
+                        display: inline;
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    }
+                }
+                margin-bottom: 3rem;
+                img{
+                    background-color: rgba(255, 255, 255, 0.619);
+                    padding: 1rem;
+                    border-radius: 50%;
+                    &:hover{
+                        animation: circiling 2s linear 0s infinite;
+                        cursor: pointer;
+                    }
+                }
+                span{
+                    display: block;
+                
+                }
+            }
+        }
+        img{
+            width: 80px;
+        }
+    }
+}  
+
+@keyframes circiling {
+    100%{
+        transform: rotate(360deg) ;
+    }
+    
+}
+
+@media screen and (min-width: 999px) {
+    .achievments{
+        text-align: center;
+    
+        &__contents{
+       
+            .wrappers{
+                flex-direction: row;
+                justify-content: space-around;
+            }
+}
+}
+}

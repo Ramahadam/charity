@@ -1,0 +1,66 @@
+.ceo{
+    padding: 90px 0;
+    height: 300px;
+    &__contents{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-bottom: 10rem;
+        .image{
+            position: relative;
+            z-index: 9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+            .shape{
+                position: absolute;
+                height: 300px;
+                width: 100%;
+                z-index: -1;
+                background-color: $veryLightGray;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
+
+            }
+            img{
+                width: 70%;
+                border: 2px solid #fff;
+                z-index: 999;
+               
+            }
+        }
+
+        .talks{
+            span{
+                font-weight: bold;
+                margin-top: 1rem;
+                color: $primaryColor;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ceo{
+       
+        &__contents{
+            grid-template-columns: 100%;
+            text-align: center;
+            p{
+                max-width: 90%;
+                margin: 0 auto;
+                
+            }
+
+            .image{
+                .shape{
+                    clip-path: polygon(100% 0%, 100% 60%, 0% 0%);
+
+                }
+
+            }
+           }
+}
+}

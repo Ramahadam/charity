@@ -1,2 +1,2 @@
 # charity
-Charity organization 
+Website for charity organization
